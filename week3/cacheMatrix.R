@@ -26,3 +26,12 @@ cacheinverse <- function(x, ...) {      # this function computes the special mat
 
 my_Matrix <- makeCacheMatrix(matrix(1:4, 2, 2))
 my_Matrix$get()
+
+new_matrix <- makeCacheMatrix(matrix(c(2, 4, 5, 7, 4, 9, 3, 5, 8), 3, 3))
+new_matrix
+
+new_matrix$get()
+
+cacheinverse(new_matrix)
+
+cacheinverse(my_Matrix)
